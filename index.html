@@ -1,0 +1,20 @@
+<html>
+    <script>
+        
+        function foo() {
+        getHref = document.getElementById("num").value;
+        getText = document.getElementById("inp").value;
+        document.getElementById("anchor").href = "https://wa.me/"+getHref+"?text="+getText;
+        }
+        
+    </script>
+    <body>
+        <input type="text" id="num" name="num" onchange="foo();">
+        <br>
+        Text:
+        <br>
+        <input type="text" id="inp" name="num" onchange="foo();">
+        <br>
+        <a id="anchor" href="">Link</a>
+    </body>
+</html>
